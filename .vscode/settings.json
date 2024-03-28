@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "GLIB.C": "cpp",
+        "MIDIECHO.C": "cpp",
+        "TAIL.C": "cpp",
+        "BLASTER.C": "cpp",
+        "CLAD.C": "cpp",
+        "DIGIPLAY.C": "cpp",
+        "VOCPLAY.C": "cpp",
+        "XPLAY.C": "cpp",
+        "MDITEST.C": "cpp",
+        "SOUNDFX.C": "cpp"
+    }
+}

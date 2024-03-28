@@ -1,0 +1,6 @@
+[submodule "AIL2"]
+	path = AIL2
+	url = https://github.com/Tronix286/AIL2
+[submodule "extract-ascendancy-py"]
+	path = extract-ascendancy-py
+	url = https://github.com/daumiller/ascendancy
