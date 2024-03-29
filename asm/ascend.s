@@ -7736,24 +7736,70 @@ func_15ed4:
     pop    %ebx
     ret
 
-vtable_1604c:
-    .long   func_c3895153
-    .long   func_c1f6d189
-    .long   func_ba147404
-    .long   func_858c0
-    .long   func_5c09be8
-    .long   func_c0b6e800
-    .long   func_d8890005
-    .long   func_8bc35b59
-    .long   func_19be90
-    .long   func_a780c700
-    .long   func_e8000000
-    .long   func_85000858
-    .long   func_890774d2
-    .long   func_f8d6e8d0
-    .long   func_838b0000
-    .long   func_19be
-
+/*----------------------------------------------------------------*/
+func_1604c:
+/*----------------------------------------------------------------*/
+    push %ebx
+    push %ecx
+    mov %eax, %ebx
+    mov %edx, %ecx
+    test $0x4, %cl
+    je jump_1606b
+    mov $0x858c0, %edx
+    call func_000720fc
+    call func_0007211c
+    mov %ebx, %eax
+    pop %ecx
+    pop %ebx
+    ret
+  jump_1606b:
+    mov %2, %edx
+    mov $0x858e8, %2
+    test %edx, %edx
+    je jump_16086
+    mov %edx, %eax
+    call func_0002595c
+  jump_16086:
+    mov %2, %eax
+    call func_0007211c
+    xor %edx, %edx
+    lea 0x4f80(%ebx), %eax
+    call func_0001a9c0
+    sub $0x13a, %eax            //314
+    xor %edx, %edx
+    call func_0001b66c                     //"\u00cd@" fcn.0001b66c
+    sub $0x1904, %eax
+    xor %edx, %edx
+    call func_00015d2c                     //"\u01c0" fcn.00015d2c
+    sub $0x804, %eax            //2052
+    xor %edx, %edx
+    call func_00015788                     //"\u01c0" fcn.00015788
+    sub $0x804, %eax            //2052
+    xor %edx, %edx
+    call func_00015788                     //"\u01c0" fcn.00015788
+    sub $0x804, %eax            //2052
+    xor %edx, %edx
+    call func_00015788                     //"\u01c0" fcn.00015788
+    sub $0x828, %eax            //2088
+    xor %edx, %edx
+    call func_0001a9e0
+    sub $0xfa0, %eax            //4000
+    xor %edx, %edx
+    call func_0001aa00
+    sub $0x4b0, %eax            //1200
+    xor %edx, %edx
+    call func_0001a9e0
+    mov $0x1, %edx
+    sub $0xbe, %eax             //190
+    call func_0002bf28
+    mov %eax, %ebx
+    test $0x2, %cl              //2
+    je $0x16119                 //likely
+    call func_00072124
+    mov %ebx, %eax
+    pop %ecx
+    pop %ebx
+    ret
 
 /*----------------------------------------------------------------*/
 func_16120:
@@ -142211,3 +142257,10 @@ data_85850:
     .long   func_10b24
     .long   func_11870
     .long   func_2c608
+data_85870:
+.byte 0x00, 0xf0, 0x3b, 0x01, 0x00, 0xc0, 0x3b, 0x01, 0x00, 0xe0, 0x3b, 0x01, 0x00, 0x0c, 0x00, 0x00
+.byte 0x00, 0x00, 0x00, 0x00, 0x35, 0xfa, 0x8e, 0x3c, 0xe1, 0x2e, 0x65, 0x42, 0x35, 0xfa, 0x8e, 0x3c
+.byte 0xe1, 0x2e, 0x65, 0x42, 0x00, 0xc0, 0xaa, 0x01, 0x00, 0xd4, 0x21, 0x07, 0x00, 0x90, 0xaa, 0x01
+.byte 0x00, 0x08, 0x1a, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x78, 0xbb, 0x01, 0x00, 0xd4, 0x21, 0x07
+.byte 0x00, 0xc8, 0xbb, 0x01, 0x00, 0x18, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x04, 0x00, 0x00
+func_858c0:
