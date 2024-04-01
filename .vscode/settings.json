@@ -9,6 +9,7 @@
         "VOCPLAY.C": "cpp",
         "XPLAY.C": "cpp",
         "MDITEST.C": "cpp",
-        "SOUNDFX.C": "cpp"
+        "SOUNDFX.C": "cpp",
+        "MIDIREC.C": "cpp"
     }
 }
