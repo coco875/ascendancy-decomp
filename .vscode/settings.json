@@ -13,6 +13,7 @@
         "MIDIREC.C": "cpp",
         "MIDILOG.C": "cpp",
         "MLIST.C": "cpp",
-        "VTOR.C": "cpp"
+        "VTOR.C": "cpp",
+        "cstdio": "cpp"
     }
 }
