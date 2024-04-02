@@ -10,6 +10,9 @@
         "XPLAY.C": "cpp",
         "MDITEST.C": "cpp",
         "SOUNDFX.C": "cpp",
-        "MIDIREC.C": "cpp"
+        "MIDIREC.C": "cpp",
+        "MIDILOG.C": "cpp",
+        "MLIST.C": "cpp",
+        "VTOR.C": "cpp"
     }
 }
